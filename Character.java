@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Character {
     public String name;
     public SocialStatus socialStatus;
@@ -22,6 +24,10 @@ public class Character {
 
     public SocialStatus getSocialStatus() {
         return socialStatus;
+    }
+
+    public String getSocialStatusString() {
+        return socialStatus.toString().toLowerCase().replace('_', ' ');
     }
 
     public int getLaborStrength() {
