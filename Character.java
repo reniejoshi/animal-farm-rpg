@@ -24,6 +24,7 @@ public class Character {
         this.socialStatus = socialStatus;
         this.laborStrength = laborStrength;
         this.educationLevel = educationLevel;
+        this.loyalty = loyalty;
     }
 
     public String getName() {
