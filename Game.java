@@ -21,6 +21,7 @@ public class Game {
             System.out.println(" -Social status: " + characterDataCharacter.getSocialStatusString());
             System.out.println(" -Labor strength: " + characterDataCharacter.getLaborStrength() + " XP");
             System.out.println(" -Education level: " + characterDataCharacter.getEducationLevel() + " XP");
+            System.out.println(" -Loyalty: " + characterDataCharacter.getLoyalty() + " XP");
         });
         System.out.println();
 
