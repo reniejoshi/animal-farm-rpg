@@ -5,6 +5,7 @@ public class Character {
     public SocialStatus socialStatus;
     public int laborStrength;
     public int educationLevel;
+    public int loyalty;
 
     public enum SocialStatus {
         CORRUPT_LEADER,
@@ -12,6 +13,13 @@ public class Character {
     }
 
     public Character(String name, SocialStatus socialStatus, int laborStrength, int educationLevel) {
+        this.name = name;
+        this.socialStatus = socialStatus;
+        this.laborStrength = laborStrength;
+        this.educationLevel = educationLevel;
+    }
+
+    public Character(String name, SocialStatus socialStatus, int laborStrength, int educationLevel, int loyalty) {
         this.name = name;
         this.socialStatus = socialStatus;
         this.laborStrength = laborStrength;
@@ -36,5 +44,9 @@ public class Character {
 
     public int getEducationLevel() {
         return educationLevel;
+    }
+
+    public int getLoyalty() {
+        return loyalty;
     }
 }
