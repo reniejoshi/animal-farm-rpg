@@ -16,10 +16,16 @@ public class Game {
     }
 
     private void selectCharacter() {
-        System.out.println("Select character: ");
-        characterData.characters.forEach(characterDataCharacter -> System.out.println(characterDataCharacter.getName()));
+        characterData.characters.forEach(characterDataCharacter -> {
+            System.out.println(characterDataCharacter.getName());
+            System.out.println(" -Social status: " + characterDataCharacter.getSocialStatusString());
+            System.out.println(" -Labor strength: " + characterDataCharacter.getLaborStrength() + " XP");
+            System.out.println(" -Education level: " + characterDataCharacter.getEducationLevel() + " XP");
+        });
+        System.out.println();
 
-        String name = scanner.nextLine();
+        System.out.print("Select character: ");
+        String name = scanner.next();
         switch(name) {
             case "Boxer" -> {
                 character = characterData.characters.get(0);
